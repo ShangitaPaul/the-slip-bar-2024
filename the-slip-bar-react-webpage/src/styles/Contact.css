@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playball&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ojuju:wght@200..800&family=Poiret+One&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Apply custom styles to Contact component */
+#af-height-90 {
+    height: 90%;
+  }
+  
+  .af-max-width {
+    max-width: 960px; /* You can adjust this value as needed */
+  }
+  
+  .position-relative {
+    position: relative;
+  }
+  
+  /* Style headings */
+  h1 {
+    font-family: "Pacifico", cursive;
+    font-size: 3rem;
+    text-align: center;
+    color: #333;
+    margin: 50px 0;
+    margin-top: 50px;
+  }
+
+    
+  
+  h2 {
+    font-family: "Urbanist", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    margin-bottom: 10px;
+  }
+  
+  /* Style paragraphs */
+  p {
+    font-family: "Urbanist", sans-serif;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  

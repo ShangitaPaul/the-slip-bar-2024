@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import JobList from './JobList';
 import JobDetails from './JobDetail'; // Assuming JobDetails component exists
-import '../styles/jobsPage.css';
+import '../styles/JobsPage.css';
 
 function JobsPage() {
   const [jobs, setJobs] = useState([]);

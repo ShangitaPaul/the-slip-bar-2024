@@ -94,7 +94,7 @@ const RedondoBeach = () => {
           </Col>
           <Col md={4}>
             <h2>Contact Information</h2>
-            <p>Phone: (310) 921-8940</p>
+            <p>Phone: <a href="tel:+13109218940">(310) 921-8940</a></p>
             <p>
               Email:{" "}
               <a href="mailto:info@theslipbar.com">info@theslipbar.com</a>

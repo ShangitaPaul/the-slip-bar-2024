@@ -15,7 +15,7 @@ function Navigation() {
       <Container>
         <Navbar.Brand as={Link} to="/">
           <img
-            src="/img/thesliplogo.png"
+            src="/img/thesliplogo1.png"
             width="30"
             height="30"
             className="d-inline-block align-top"

@@ -21,6 +21,7 @@
   width: 270px;
   height: auto;
   margin-right: 10px;
+  margin-left: 60px;
 }
 
 
@@ -80,6 +81,6 @@
   .navbar-toggler {
     color: #fff;
     border: none;
-    margin-right: 10px; /* Add margin to the right */
+    margin-right: 20px; /* Add margin to the right */
   }
 }

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Navbar, Container, Nav, NavDropdown } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import "./Navigation.css";
+import "../styles/Navigation.css";
 
 function Navigation() {
   const [expanded, setExpanded] = useState(false);

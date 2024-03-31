@@ -104,9 +104,7 @@ const Lomita = () => {
             </p>
           </Col>
         </Row>
-        <br>
-        </br>
-   
+  
         <Col md={12}>
         <h2>Parking</h2>
           <p>

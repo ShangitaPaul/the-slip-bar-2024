@@ -18,6 +18,22 @@ body {
 
 }
 
+.justify-content-center custom-nav {
+  display: flex;
+  justify-content: center;
+  font-family: 
+}
+
+.custom-link nav-link {
+  font-family: "Urbanist", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  margin: 5px 0;
+  font-size: 2rem;
+  color: #0d4d8d; /* Set link color */
+  text-decoration: none; /* Remove underline */
+  padding: 10px 15px; /* Add padding */
+}
 
 
 p {
@@ -67,6 +83,8 @@ h5 {
 
 h5::before,
 h5::after {
+  display: flex;
+  flex-direction: column;
   content: "";
   position: absolute;
   top: 50%;
@@ -124,7 +142,7 @@ h3 {
 .custom-nav .custom-link {
   font-family: "Urbanist", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 600;
+  font-weight: 200;
   font-style: normal;
   margin: 5px 0;
   font-size: 2rem;
@@ -142,9 +160,9 @@ h3 {
 
 
 @media (max-width: 576px) {
-
-  h5 ::before,
-  h5 ::after {
-    width: 20%;
+  
+  .custom-nav .custom-link {
+    font-size: 1.5rem;
+    font-weight: 400;
   }
 }

@@ -1,4 +1,3 @@
-// JobsPage.js
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import JobList from './JobList';
@@ -46,11 +45,10 @@ function JobsPage() {
           <option value="">All Locations</option>
           <option value="Lomita">Lomita</option>
           <option value="Redondo Beach">Redondo Beach</option>
-          {/* Add more locations as needed */}
         </select>
       </div>
       <JobList jobs={filteredJobs} onJobClick={handleJobClick} />
-      {selectedJob && <JobDetails job={selectedJob} />}
+      {selectedJob ? <JobDetails job={selectedJob} /> : null}
     </div>
   );
 }

@@ -26,6 +26,9 @@
 
 }
 
+.instagram-icon {
+  display: none;
+}
 
 .navbar-with-border {
   border-bottom: 5px #0d4d8d solid;
@@ -62,6 +65,8 @@
   display: block;
 }
 
+
+
 /* Navigation.css */
 .custom-dropdown .dropdown-menu {
   font-family: "Urbanist", sans-serif;
@@ -83,8 +88,17 @@
 
   .navbar-brand img {
     display: block;
-    width: 170px; /* Adjust width as needed */
+    width: 200px; /* Adjust width as needed */
     height: auto;
     margin: 0;
   }
+
+  .instagram-icon {
+    display: block;
+    width: auto;
+    height: auto;
+    margin: 0;
+    color: transparent;
+  }
+  
 }

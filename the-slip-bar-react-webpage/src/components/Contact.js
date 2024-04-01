@@ -18,7 +18,7 @@ const Contact = () => {
                 <h2>The Slip Lomita</h2>
                 <p>24503 Narbonne Ave.</p>
                 <p>Lomita, CA 90717</p>
-                <p>Phone: (424) 376-6947</p>
+                <p>Phone: <a href="tel:+14243766947">(424) 376-6947</a></p>
               </Col>
             </Row>
             <Row>
@@ -26,7 +26,7 @@ const Contact = () => {
                 <h2>The Slip Redondo Beach</h2>
                 <p>120 N. International Boardwalk</p>
                 <p>Redondo Beach, CA 90277</p>
-                <p>Phone: (310) 376-8910</p>
+                <p>Phone: <a href="tel:+13103768910">(310) 376-8910</a></p>
               </Col>
             </Row>
           </Col>
@@ -34,7 +34,7 @@ const Contact = () => {
             <Row>
               <Col>
                 <h2>Email:</h2>
-                <p>info@theslipbar.com</p>
+                <p><a href="mailto:info@theslipbar.com">info@theslipbar.com</a></p>
               </Col>
             </Row>
             <Row>

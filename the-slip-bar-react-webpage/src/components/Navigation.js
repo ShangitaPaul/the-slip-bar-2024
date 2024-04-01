@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Navbar, Container, Nav, NavDropdown } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import "./Navigation.css";
+import "../styles/Navigation.css";
 
 function Navigation() {
   const [expanded, setExpanded] = useState(false);
@@ -15,7 +15,7 @@ function Navigation() {
       <Container>
         <Navbar.Brand as={Link} to="/">
           <img
-            src="/img/thesliplogo.png"
+            src="/img/thesliplogo1.png"
             width="30"
             height="30"
             className="d-inline-block align-top"

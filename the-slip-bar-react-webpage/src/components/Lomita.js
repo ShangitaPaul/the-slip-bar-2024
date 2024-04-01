@@ -97,16 +97,14 @@ const Lomita = () => {
           </Col>
           <Col md={4}>
             <h2>Contact Information</h2>
-            <p>Phone: (424) 376-6947</p>
+            <p>Phone: <a href="tel:+14243766947">(424) 376-6947</a></p>
             <p>
               Email:{" "}
               <a href="mailto:info@theslipbar.com">info@theslipbar.com</a>
             </p>
           </Col>
         </Row>
-        <br>
-        </br>
-   
+  
         <Col md={12}>
         <h2>Parking</h2>
           <p>

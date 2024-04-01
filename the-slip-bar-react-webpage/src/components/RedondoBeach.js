@@ -84,8 +84,7 @@ const RedondoBeach = () => {
           </Col>
           <Col md={4}>
             <h2>Address</h2>
-            <p>120 N International Boardwalk</p>
-            <p>Redondo Beach, CA 90277</p>
+            <p>120 N International Boardwalk, Redondo Beach, CA 90277</p>
             <a
               href="https://www.google.com/maps/dir//120+N+International+Boardwalk+Redondo+Beach,+CA+90277"
               rel="noreferrer"
@@ -95,16 +94,14 @@ const RedondoBeach = () => {
           </Col>
           <Col md={4}>
             <h2>Contact Information</h2>
-            <p>Phone: (310) 921-8940</p>
+            <p>Phone: <a href="tel:+13109218940">(310) 921-8940</a></p>
             <p>
               Email:{" "}
               <a href="mailto:info@theslipbar.com">info@theslipbar.com</a>
             </p>
           </Col>
         </Row>
-        <br>
-        </br>
-   
+  
         <Col md={12}>
         <h2>Parking</h2>
           <p>

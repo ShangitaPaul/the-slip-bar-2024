@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import { MEMBERS } from "../../data/team";
 import AboutUs from "./AboutUs";
-import "./About.css"; // Import the CSS file
+import "../../styles/About.css"; // Import the About.css f
+import ScrollToTopButton from "../ScrollToTopButton"; // Import the ScrollToTopButton component
 
 class About extends Component {
   constructor() {
@@ -21,6 +22,8 @@ class About extends Component {
           className="logo"
         />
         <AboutUs members={this.state.members} />
+        {/* Scroll to top button */}
+        <ScrollToTopButton />
       </div>
     );
   }

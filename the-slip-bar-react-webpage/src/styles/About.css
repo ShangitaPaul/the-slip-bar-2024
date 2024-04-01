@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ojuju:wght@200..800&family=Poiret+One&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+body {
+  background-color: #f9f9f9;
+  color: black;
+}
+
+
+p {
+  font-family: "Urbanist", sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  margin: 5px 0;
+}
+.logo {
+  width: 30%;
+  height: auto;
+  margin-top: 0;
+}
+
+
+/* Mobile styles */
+@media (max-width: 576px) {
+  .logo {
+    width: 70%;
+  }
+}
+  

@@ -45,6 +45,12 @@ p {
   margin: 5px 0;
 }
 
+
+.contact-heading {
+  margin-top: 30px;
+}
+  
+
 h1 {
   font-family: "Pacifico", cursive;
   font-weight: 400;
@@ -107,7 +113,7 @@ h6 {
   font-weight: 400;
   font-style: normal;
   font-size: 2rem;
-  margin-top: 50px;
+  margin-top: 40px;
 }
 
 h3 {
@@ -144,11 +150,11 @@ h3 {
   font-optical-sizing: auto;
   font-weight: 200;
   font-style: normal;
-  margin: 5px 0;
-  font-size: 2rem;
+  margin-top: -10px;
+  font-size: 1.5rem;
   color: #0d4d8d; /* Set link color */
   text-decoration: none; /* Remove underline */
-  padding: 10px 15px; /* Add padding */
+  padding: 10px 10px; /* Add padding */
 }
 
 .custom-nav .custom-link:hover {
@@ -156,13 +162,85 @@ h3 {
   background-color: transparent; /* Remove background color on hover */
 }
 
-/* Your existing CSS styles */
+/* Adjust the position of carousel caption */
+.carousel-caption {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  color: #fff;
+  padding: 60px; /* Adjust padding as needed */
+  text-align: center;
+
+}
+
+.carousel-caption h3 {
+  font-family: "Urbanist", sans-serif;
+  font-weight: 600;
+  font-size: 3rem;
+  margin: -5px;
+  margin-top: -10px;
+  padding: 0;
+}
+
+/* Hide carousel control arrows */
+.carousel-control-prev,
+.carousel-control-next {
+    display: none;
+}
+
+
+.carousel-caption p {
+  font-family: "Urbanist", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.carousel-indicators {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1px;
+}
 
 
 @media (max-width: 576px) {
+
   
   .custom-nav .custom-link {
     font-size: 1.5rem;
     font-weight: 400;
   }
+
+  .carousel-caption {
+    font-size: 100%;
+  }
+
+  .carousel-caption h3 {
+    font-size: 95%;
+  }
+
+  .carousel-caption p {
+    font-size: 80%;
+  }
+
+  .carousel-caption {
+    padding: 50px;
+  }
+
+  .carousel-caption h3 {
+    margin-top: -5px;
+  }
+
+  .carousel-caption p {
+    margin-top: -5px;
+  }
+
+  .carousel-indicators {
+    margin-bottom: 5px;
+  }
+
+
 }

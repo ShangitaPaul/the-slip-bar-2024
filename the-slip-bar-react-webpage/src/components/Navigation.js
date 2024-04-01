@@ -1,15 +1,25 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Navbar, Container, Nav, NavDropdown } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import "font-awesome/css/font-awesome.min.css";
 import "../styles/Navigation.css";
 
 function Navigation() {
   const [expanded, setExpanded] = useState(false);
+  const history = useHistory();
 
   const handleToggle = () => {
     setExpanded(!expanded);
   };
+
+  useEffect(() => {
+    const unlisten = history.listen(() => {
+      setExpanded(false); // Close the navigation menu when location changes
+    });
+    return () => {
+      unlisten(); // Cleanup function to remove the listener when component unmounts
+    };
+  }, [history]);
 
   return (
     <Navbar expand="lg" bg="light" className="navbar-with-border" expanded={expanded}>

@@ -6,6 +6,7 @@ import redondoBeachMenu1 from "../menus/redondomenupage2.jpg";
 import redondoBeachMenu2 from "../menus/redondomenupage1.jpg";
 import redondoMap from "../maps/redondoparking.png";
 import "../styles/RedondoBeach.css";
+import ScrollToTopButton from "./ScrollToTopButton"; // Import the ScrollToTopButton component
 
 const RedondoBeach = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -50,7 +51,7 @@ const RedondoBeach = () => {
         </Nav.Item>
       </Nav>
 
-      <div className="af-height-90 af-max-width mx-auto mt-2 position-relative">
+      <div className="af-height-90 af-max-width mx-auto mt-1 position-relative">
         <Carousel
           activeIndex={currentIndex}
           onSelect={(index) => setCurrentIndex(index)}
@@ -75,7 +76,7 @@ const RedondoBeach = () => {
       </div>
 
       <Container id="contact">
-        <h5>Contact</h5>
+        <h5 className="contact-heading">Contact</h5>
         <Row>
           <Col md={4}>
             <h2>Hours of Operation</h2>
@@ -156,6 +157,9 @@ const RedondoBeach = () => {
           data-tockify-calendar="theslipbar"
         ></div>
       </Container>
+
+      {/* Scroll to top button */}
+      <ScrollToTopButton />
     </div>
   );
 };

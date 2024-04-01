@@ -6,7 +6,7 @@ import lomitaMenu1 from "../menus/lomitamenupage2.jpg";
 import lomitaMenu2 from "../menus/lomitamenupage1.jpg"; // Corrected file extension
 import lomitaMap from "../maps/lomitamap.png"; // Corrected file path
 import "../styles/Lomita.css";
-
+import ScrollToTopButton from "./ScrollToTopButton";
 
 const Lomita = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -52,7 +52,7 @@ const Lomita = () => {
         </Nav.Item>
       </Nav>
 
-      <div className="af-height-90 af-max-width mx-auto mt-2 position-relative">
+      <div className="af-height-90 af-max-width mx-auto mt-1 position-relative">
         <Carousel
           activeIndex={currentIndex}
           onSelect={(index) => setCurrentIndex(index)}
@@ -77,7 +77,7 @@ const Lomita = () => {
       </div>
 
       <Container id="contact">
-        <h5>Contact</h5>
+        <h5 className="contact-heading">Contact</h5>
         <Row>
           <Col md={4}>
             <h2>Hours of Operation</h2>
@@ -161,6 +161,9 @@ const Lomita = () => {
           data-tockify-calendar="theslipbar"
         ></div>
       </Container>
+
+      {/* Scroll to top button */}
+      <ScrollToTopButton />
     </div>
   );
 };

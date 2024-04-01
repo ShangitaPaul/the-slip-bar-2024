@@ -81,4 +81,11 @@
     border: none;
     margin-right: 5px; /* Add margin to the right */
   }
+
+  .navbar-brand img {
+    display: block;
+    width: 160px; /* Adjust width as needed */
+    height: auto;
+    margin: 0;
+  }
 }

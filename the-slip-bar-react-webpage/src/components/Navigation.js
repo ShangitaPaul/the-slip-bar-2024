@@ -13,16 +13,10 @@ function Navigation() {
   return (
     <Navbar expand="lg" bg="light" className="navbar-with-border" expanded={expanded}>
       <Container>
-        <Navbar.Brand as={Link} to="/">
-          <img
-            src="/img/thesliplogo1.png"
-            width="30"
-            height="30"
-            className="d-inline-block align-top"
-            alt="The Slip Bar"
-          />
+        <Nav.Link as={Link} to="/" className="instagram-icon"><i className="fab fa-instagram"></i></Nav.Link> {/* Instagram icon */}
+        <Navbar.Brand as={Link} to="/" className="navbar-brand">
+          <img src="/img/thesliplogo1.png" alt="Logo" />
         </Navbar.Brand>
-        
         <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={handleToggle} />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">

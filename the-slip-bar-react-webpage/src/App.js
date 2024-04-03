@@ -8,6 +8,7 @@ import Lomita from "./components/Lomita";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import JobsPage from "./components/JobsPage";
+import Press from "./components/press/Press";
 
 
 
@@ -22,6 +23,7 @@ function App() {
         <Route path='/redondo-beach' component={RedondoBeach} />
         <Route path='/lomita' component={Lomita} /> 
         <Route path='/jobs' component={JobsPage} />
+        <Route path='/press' component={Press} />
         <Route path='/contact' component={Contact} />
         <Footer />  
       </div>

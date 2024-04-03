@@ -1,0 +1,18 @@
+/* press.css */
+
+/* Style for video containers */
+.video-container {
+    margin-bottom: 20px;
+  }
+  
+  /* Style for video titles */
+  .video-title {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  /* Style for videos */
+  .video {
+    width: 100%;
+  }
+  

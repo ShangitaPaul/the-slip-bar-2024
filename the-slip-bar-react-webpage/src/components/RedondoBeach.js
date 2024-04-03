@@ -26,7 +26,6 @@ const RedondoBeach = () => {
 
   return (
     <div className="Redondo Beach">
-      <h6>The Slip Bar</h6>
       <h4>Redondo Beach</h4>
 
       {/* Navigation Menu */}

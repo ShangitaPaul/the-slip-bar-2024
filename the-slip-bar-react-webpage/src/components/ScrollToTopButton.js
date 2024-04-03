@@ -12,7 +12,7 @@ const ScrollToTopButton = () => {
   };
 
   const handleScroll = () => {
-    const scrollThreshold = window.innerHeight / 3; // Set scroll threshold to 1/3 into the page
+    const scrollThreshold = window.innerHeight; // Set scroll threshold to entire page height
     if (window.pageYOffset > scrollThreshold) {
       setIsVisible(true);
     } else {
@@ -31,19 +31,19 @@ const ScrollToTopButton = () => {
     <div
       className={`scroll-to-top ${isVisible ? "visible" : "hidden"}`}
       onClick={scrollToTop}
+      style={{ left: "0", bottom: "20px" }} // Adjusted to touch the left side of the page
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 24 24"
         fill="none"
-        stroke="currentColor"
+        stroke="white" // Changed to white color
         strokeWidth="2"
         strokeLinecap="round"
         strokeLinejoin="round"
-        className="feather feather-arrow-up"
+        className="feather feather-chevron-up" // Changed class name to indicate a chevron icon
       >
-        <line x1="12" y1="19" x2="12" y2="5"></line>
-        <polyline points="5 12 12 5 19 12"></polyline>
+        <polyline points="18 15 12 9 6 15"></polyline> 
       </svg>
     </div>
   );

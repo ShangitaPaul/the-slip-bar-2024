@@ -27,7 +27,7 @@ const Lomita = () => {
 
   return (
     <div className="Lomita">
-      <h6>The Slip Bar</h6>
+    
       <h4>Lomita</h4>
 
       {/* Navigation Menu */}

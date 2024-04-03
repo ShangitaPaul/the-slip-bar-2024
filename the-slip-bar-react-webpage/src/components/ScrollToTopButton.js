@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from "react";
 import "../styles/ScrollToTopButton.css";
 
@@ -13,7 +14,7 @@ const ScrollToTopButton = () => {
 
   const handleScroll = () => {
     const scrollThreshold = window.innerHeight; // Set scroll threshold to entire page height
-    if (window.pageYOffset > scrollThreshold) {
+    if (window.scrollY > scrollThreshold) { // Replace window.pageYOffset with window.scrollY
       setIsVisible(true);
     } else {
       setIsVisible(false);

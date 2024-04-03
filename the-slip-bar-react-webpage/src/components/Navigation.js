@@ -26,7 +26,7 @@ function Navigation() {
       <Container>
         <Nav.Link as={Link} to="/" className="instagram-icon"><i className="fab fa-instagram"></i></Nav.Link> {/* Instagram icon */}
         <Navbar.Brand as={Link} to="/" className="navbar-brand">
-          <img src="/img/thesliplogo1.png" alt="The Slip Bar" />
+          <img src="/img/thesliplogo1.png" alt="Logo" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={handleToggle} />
         <Navbar.Collapse id="basic-navbar-nav">
@@ -43,7 +43,7 @@ function Navigation() {
             </NavDropdown>
             <Nav.Link as={Link} to="/merch">Merch</Nav.Link>
             <Nav.Link as={Link} to="/jobs">Jobs</Nav.Link>
-            <Nav.Link as={Link} to="/press/">Press</Nav.Link>
+            <Nav.Link as={Link} to="/press">Press</Nav.Link>
             <Nav.Link as={Link} to="/contact">Contact</Nav.Link>
           </Nav>
         </Navbar.Collapse>

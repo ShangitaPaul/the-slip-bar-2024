@@ -39,6 +39,12 @@
   background-color: #fff !important;
   color: #000 !important;
 }
+/* Hide carousel arrow controls */
+.carousel-control-prev,
+.carousel-control-next {
+    display: none;
+}
+
 
 /* Adjust the position of carousel caption */
 .carousel-caption {

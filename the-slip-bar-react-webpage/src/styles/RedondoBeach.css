@@ -18,6 +18,11 @@ body {
 
 }
 
+/* Hide carousel arrow controls */
+.carousel-control-prev,
+.carousel-control-next {
+    display: none;
+}
 .contact-heading {
   margin-top: 30px;
 }

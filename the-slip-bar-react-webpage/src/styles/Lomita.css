@@ -17,6 +17,9 @@ body {
   color: black;
 
 }
+.contact-heading {
+  margin-top: 30px;
+}
 
 .justify-content-center custom-nav {
   display: flex;

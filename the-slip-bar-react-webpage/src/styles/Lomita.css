@@ -27,6 +27,12 @@ body {
   font-family: 
 }
 
+/* Hide carousel arrow controls */
+.carousel-control-prev,
+.carousel-control-next {
+    display: none;
+}
+
 .custom-link nav-link {
   font-family: "Urbanist", sans-serif;
   font-optical-sizing: auto;

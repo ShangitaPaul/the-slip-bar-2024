@@ -1,4 +1,5 @@
 .footer-container {
+    font-family: "Georgia", sans-serif;
     display: flex;
     flex-direction: column;
     font-size: .5rem;

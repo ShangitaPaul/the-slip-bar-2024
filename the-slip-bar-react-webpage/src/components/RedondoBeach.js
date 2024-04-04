@@ -5,6 +5,7 @@ import redondoBeachCarouselImages from "../data/redondoBeachCarouselImages";
 import redondoBeachMenu1 from "../menus/redondomenupage2.jpg";
 import redondoBeachMenu2 from "../menus/redondomenupage1.jpg";
 import redondoMap from "../maps/redondoparking.png";
+import Navbar from "react-bootstrap/Navbar";
 import "../styles/RedondoBeach.css";
 import ScrollToTopButton from "./ScrollToTopButton"; // Import the ScrollToTopButton component
 
@@ -25,30 +26,75 @@ const RedondoBeach = () => {
   }, []);
 
   return (
-    <div className="Redondo Beach">
+    <div className="Redondo-Beach">
       <h4>Redondo Beach</h4>
 
-      {/* Navigation Menu */}
-      <Nav
-        defaultActiveKey="#contact"
-        className="justify-content-center custom-nav"
-      >
-        <Nav.Item>
-          <Nav.Link href="#contact" className="custom-link">
+      
+        <Navbar
+          bg="light"
+          expand="lg"
+          variant="light"
+          style={{ display: "flex", justifyContent: "center", marginBottom: "0", marginTop: "0", paddingBottom: "0" }}>
+          <Container>
+            <Nav
+          className="me-auto"
+          style={{
+            display: "flex",
+            flexDirection: "row",
+            justifyContent: "center",
+            alignItems: "center",
+            width: "100%",
+            margin: "0 auto",
+            marginBottom: 0,
+
+          }}
+            >
+          <Nav.Link
+            href="#contact"
+            style={{
+              fontFamily: "Georgia, serif",
+              fontWeight: 400,
+              fontSize: "1.5rem",
+              color: "#0d4d8d",
+              textDecoration: "none",
+              margin: "0 10px", // Add margin to create space between links
+            }}
+          >
             Contact
           </Nav.Link>
-        </Nav.Item>
-        <Nav.Item>
-          <Nav.Link href="#menu" className="custom-link">
+          <Nav.Link
+            href="#menu"
+            style={{
+              fontFamily: "Georgia, serif",
+              fontWeight: 400,
+              fontSize: "1.5rem",
+              color: "#0d4d8d",
+              textDecoration: "none",
+              margin: "0 10px", // Add margin to create space between links
+            }}
+          >
             Menu
           </Nav.Link>
-        </Nav.Item>
-        <Nav.Item>
-          <Nav.Link href="#events" className="custom-link">
+          <Nav.Link
+            href="#events"
+            style={{
+              fontFamily: "Georgia, serif",
+              fontWeight: 400,
+              fontSize: "1.5rem",
+              color: "#0d4d8d",
+              textDecoration: "none",
+              margin: "0 10px", // Add margin to create space between links
+            }}
+          >
             Events
           </Nav.Link>
-        </Nav.Item>
-      </Nav>
+            </Nav>
+          </Container>
+      </Navbar>
+      
+      {/* <div style={{ borderBottom: "2px solid #0d4d8d", marginTop: "0", marginBottom: "20px", padding: "0" }}></div> */}
+
+
 
       <div className="af-height-90 af-max-width mx-auto mt-1 position-relative">
         <Carousel

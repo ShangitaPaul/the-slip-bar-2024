@@ -5,6 +5,7 @@ import lomitaCarouselImages from "../data/lomitaCarouselImages";
 import lomitaMenu1 from "../menus/lomitamenupage2.jpg";
 import lomitaMenu2 from "../menus/lomitamenupage1.jpg"; // Corrected file extension
 import lomitaMap from "../maps/lomitamap.png"; // Corrected file path
+import Navbar from "react-bootstrap/Navbar";
 import "../styles/Lomita.css";
 import ScrollToTopButton from "./ScrollToTopButton";
 
@@ -27,30 +28,73 @@ const Lomita = () => {
 
   return (
     <div className="Lomita">
-    
       <h4>Lomita</h4>
 
-      {/* Navigation Menu */}
-      <Nav
-        defaultActiveKey="#contact"
-        className="justify-content-center custom-nav"
-      >
-        <Nav.Item>
-          <Nav.Link href="#contact" className="custom-link">
+      
+        <Navbar
+          bg="light"
+          expand="lg"
+          variant="light"
+          style={{ display: "flex", justifyContent: "center", marginBottom: "0", marginTop: "0", paddingBottom: "0" }}>
+          <Container>
+            <Nav
+          className="me-auto"
+          style={{
+            display: "flex",
+            flexDirection: "row",
+            justifyContent: "center",
+            alignItems: "center",
+            width: "100%",
+            margin: "0 auto",
+            marginBottom: 0,
+
+          }}
+            >
+          <Nav.Link
+            href="#contact"
+            style={{
+              fontFamily: "Georgia, serif",
+              fontWeight: 400,
+              fontSize: "1.5rem",
+              color: "#0d4d8d",
+              textDecoration: "none",
+              margin: "0 10px", // Add margin to create space between links
+            }}
+          >
             Contact
           </Nav.Link>
-        </Nav.Item>
-        <Nav.Item>
-          <Nav.Link href="#menu" className="custom-link">
+          <Nav.Link
+            href="#menu"
+            style={{
+              fontFamily: "Georgia, serif",
+              fontWeight: 400,
+              fontSize: "1.5rem",
+              color: "#0d4d8d",
+              textDecoration: "none",
+              margin: "0 10px", // Add margin to create space between links
+            }}
+          >
             Menu
           </Nav.Link>
-        </Nav.Item>
-        <Nav.Item>
-          <Nav.Link href="#events" className="custom-link">
+          <Nav.Link
+            href="#events"
+            style={{
+              fontFamily: "Georgia, serif",
+              fontWeight: 400,
+              fontSize: "1.5rem",
+              color: "#0d4d8d",
+              textDecoration: "none",
+              margin: "0 10px", // Add margin to create space between links
+            }}
+          >
             Events
           </Nav.Link>
-        </Nav.Item>
-      </Nav>
+            </Nav>
+          </Container>
+      </Navbar>
+      
+      {/* <div style={{ borderBottom: "2px solid #0d4d8d", marginTop: "0", marginBottom: "20px", padding: "0" }}></div> */}
+
 
       <div className="af-height-90 af-max-width mx-auto mt-1 position-relative">
         <Carousel
@@ -97,25 +141,25 @@ const Lomita = () => {
           </Col>
           <Col md={4}>
             <h2>Contact Information</h2>
-            <p>Phone: <a href="tel:+14243766947">(424) 376-6947</a></p>
+            <p>
+              Phone: <a href="tel:+14243766947">(424) 376-6947</a>
+            </p>
             <p>
               Email:{" "}
               <a href="mailto:info@theslipbar.com">info@theslipbar.com</a>
             </p>
           </Col>
         </Row>
-  
+
         <Col md={12}>
-        <h2>Parking</h2>
-          <p>
-            Parking is available in the lot across the bar.
-            </p>
+          <h2>Parking</h2>
+          <p>Parking is available in the lot across the bar.</p>
           {lomitaMap && (
             <img
               src={lomitaMap}
               alt="Lomita Map"
               className="img-fluid"
-              style={{ maxWidth: "100%", border: "1px #0d4d8d solid"}}
+              style={{ maxWidth: "100%", border: "1px #0d4d8d solid" }}
               onError={(e) => console.error("Error loading map image:", e)}
             />
           )}

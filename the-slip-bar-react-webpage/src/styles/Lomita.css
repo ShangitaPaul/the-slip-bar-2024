@@ -1,43 +1,25 @@
-/* Import the Montserrat font */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playball&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Unlock&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poiret+One&family=Thasadith:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Ojuju:wght@200..800&family=Poiret+One&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 body {
-  font-family: "Urbanist", sans-serif;
+  font-family: "Georgia", serif;
   margin: 5px 0;
   text-align: center;
   font-size: 1.5rem;
   color: black;
-
 }
 
-.justify-content-center custom-nav {
-  display: flex;
-  justify-content: center;
-  font-family: 
+/* Hide carousel arrow controls */
+.carousel-control-prev,
+.carousel-control-next {
+    display: none;
 }
 
-.custom-link nav-link {
-  font-family: "Urbanist", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  margin: 5px 0;
-  font-size: 2rem;
-  color: #0d4d8d; /* Set link color */
-  text-decoration: none; /* Remove underline */
-  padding: 10px 15px; /* Add padding */
+.contact-heading {
+  margin-top: 30px;
 }
-
 
 p {
-  font-family: "Urbanist", sans-serif;
+  font-family: "Georgia", serif;
   font-optical-sizing: auto;
   font-style: normal;
   font-weight: 300;
@@ -45,40 +27,46 @@ p {
   margin: 5px 0;
 }
 
+h1, h2, h3, h6 {
+  font-family: "Georgia", serif; /* Set font-family for h1, h2, h3, h6 */
+}
+
 h1 {
-  font-family: "Pacifico", cursive;
   font-weight: 400;
   font-style: normal;
   font-size: 2rem;
 }
 
 h2 {
-  font-family: "Urbanist", sans-serif;
   font-style: normal;
   font-size: 1.8rem;
   font-weight: 300;
   margin: 5px 0;
 }
 
-h4 {
-  margin-top: 50px;
-  font-family: "Pacifico", cursive;
+h3, h6 {
   font-weight: 400;
   font-style: normal;
-  font-size: 3rem;
+  font-size: 2rem;
+  margin-top: 50px;
+}
+
+h4 {
+  font-family: "Lobster Two", cursive; /* Set font-family for h4 */
+  margin-top: 50px;
+  margin-bottom: 0;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 4rem;
 }
 
 h5 {
-  font-family: "Unlock", serif;
+  font-family: "Lobster Two", cursive; /* Set font-family for h5 */
   font-weight: 400;
   font-style: normal;
-  font-size: 2.5rem;
+  font-size: 2.6rem;
   margin: 20px 0; /* Increased margin for more space */
   margin-top: 100px;
-  
-}
-
-h5 {
   position: relative;
 }
 
@@ -91,7 +79,7 @@ h5::after {
   top: 50%;
   width: 30%; /* Adjust line length */
   height: 1px; /* Adjust line thickness */
-  background-color: #0d4d8d
+  background-color: #0d4d8d;
 }
 
 h5::before {
@@ -101,22 +89,6 @@ h5::before {
 h5::after {
   right: 0;
 }
-
-
-h6 {
-  font-family: "Pacifico", cursive;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 2rem;
-  margin-top: 50px;
-}
-
-h3 {
-  font-size: 1.2rem;
-  margin: 5px 0;
-}
-
-
 
 .menu {
   width: 100%;
@@ -134,36 +106,7 @@ h3 {
   height: auto;
 }
 
-
 /* Center-align text */
 .text-center {
   text-align: center;
-}
-
-.custom-nav .custom-link {
-  font-family: "Urbanist", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 200;
-  font-style: normal;
-  margin: 5px 0;
-  font-size: 2rem;
-  color: #0d4d8d; /* Set link color */
-  text-decoration: none; /* Remove underline */
-  padding: 10px 15px; /* Add padding */
-}
-
-.custom-nav .custom-link:hover {
-  color: #333; /* Change color on hover */
-  background-color: transparent; /* Remove background color on hover */
-}
-
-/* Your existing CSS styles */
-
-
-@media (max-width: 576px) {
-  
-  .custom-nav .custom-link {
-    font-size: 1.5rem;
-    font-weight: 400;
-  }
 }

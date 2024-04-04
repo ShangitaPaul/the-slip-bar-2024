@@ -26,7 +26,7 @@ function Navigation() {
       <Container>
         <Nav.Link as={Link} to="/" className="instagram-icon"><i className="fab fa-instagram"></i></Nav.Link> {/* Instagram icon */}
         <Navbar.Brand as={Link} to="/" className="navbar-brand">
-          <img src="/img/thesliplogo1.png" alt="Logo" />
+          <img src="/img/slip-banner-logo-2024.png" alt="Logo" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={handleToggle} />
         <Navbar.Collapse id="basic-navbar-nav">

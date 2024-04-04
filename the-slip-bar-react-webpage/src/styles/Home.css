@@ -45,7 +45,6 @@
   position: absolute;
   bottom: 0;
   left: 0;
-
   color: #000; /* Set text color to black */
   background-color: #ffffff; /* Set background color to white */
   padding: 60px; /* Adjust padding as needed */
@@ -79,25 +78,16 @@
 @media (max-width: 576px) {
   .carousel-caption {
     font-size: 100%;
-  }
-
-  .carousel-caption h3 {
-    font-size: 95%;
-  }
-
-  .carousel-caption p {
-    font-size: 80%;
-  }
-
-  .carousel-caption {
     padding: 30px;
   }
 
   .carousel-caption h3 {
+    font-size: 95%;
     margin-top: -5px;
   }
 
   .carousel-caption p {
+    font-size: 80%;
     margin-top: -5px;
   }
 

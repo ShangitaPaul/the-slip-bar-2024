@@ -13,6 +13,7 @@ function JobsPage() {
   useEffect(() => {
     const fetchJobs = async () => {
       try {
+        console.log('process.env.REACT_APP_API_URL:', process.env.REACT_APP_API_URL);
         const response = await axios.get(`${process.env.REACT_APP_API_URL}/jobs`);
         setJobs(response.data);
         setFilteredJobs(response.data);

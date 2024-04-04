@@ -10,7 +10,7 @@ const Contact = () => {
   return (
     <div>
       <Container>
-        <h1>Get in Touch!</h1>
+        <h1 style={{ marginTop: "5px" }}>Get in Touch!</h1>
         <Row>
           <Col md={6}>
             <Row>

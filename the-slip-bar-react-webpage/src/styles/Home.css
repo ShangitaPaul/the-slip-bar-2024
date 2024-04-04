@@ -1,11 +1,6 @@
 
 /* Common styles for all screen sizes */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playball&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poiret+One&family=Thasadith:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Ojuju:wght@200..800&family=Poiret+One&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
-
 
 .button-container {
   display: flex;
@@ -16,7 +11,7 @@
 }
 
 .button-container .btn {
-  font-family: "Urbanist", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
   margin: 5px 0;
   border-radius: 0;
@@ -46,15 +41,14 @@
   position: absolute;
   bottom: 0;
   left: 0;
-
   color: #fff;
   padding: 60px; /* Adjust padding as needed */
   text-align: center;
-
 }
 
 .carousel-caption h3 {
   font-family: "Urbanist", sans-serif;
+  color: white;
   font-weight: 600;
   font-size: 3rem;
   margin: -5px;
@@ -76,29 +70,19 @@
   margin-bottom: 1px;
 }
 
-
 @media (max-width: 576px) {
   .carousel-caption {
     font-size: 100%;
-  }
-
-  .carousel-caption h3 {
-    font-size: 95%;
-  }
-
-  .carousel-caption p {
-    font-size: 80%;
-  }
-
-  .carousel-caption {
     padding: 30px;
   }
 
   .carousel-caption h3 {
+    font-size: 95%;
     margin-top: -5px;
   }
 
   .carousel-caption p {
+    font-size: 80%;
     margin-top: -5px;
   }
 

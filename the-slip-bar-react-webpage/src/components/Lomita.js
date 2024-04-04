@@ -28,67 +28,72 @@ const Lomita = () => {
 
   return (
     <div className="Lomita">
-      <h4>Lomita</h4>
+      <h4 style={{ marginBottom: "-20px", marginTop: "20px" }}>Lomita</h4>
 
-      
-        <Navbar
-          bg="light"
-          expand="lg"
-          variant="light"
-          style={{ display: "flex", justifyContent: "center", marginBottom: "0", marginTop: "0", paddingBottom: "0" }}>
-          <Container>
-            <Nav
-          className="me-auto"
-          style={{
-            display: "flex",
-            flexDirection: "row",
-            justifyContent: "center",
-            alignItems: "center",
-            width: "100%",
-            margin: "0 auto",
-            marginBottom: 0,
-
-          }}
+      <Navbar
+        expand="lg"
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          marginBottom: "-20px",
+          marginTop: "0",
+          paddingBottom: "0",
+          backgroundColor: "transparent",
+          boxShadow: "none"
+        }}
+      >
+        <Container>
+          <Nav
+            className="me-auto"
+            style={{
+              display: "flex",
+              flexDirection: "row",
+              justifyContent: "center",
+              alignItems: "center",
+              width: "100%",
+              margin: "0 auto",
+              marginBottom: 0
+            }}
+          >
+            <Nav.Link
+              href="#contact"
+              style={{
+                fontFamily: "Georgia, serif",
+                fontWeight: 400,
+                fontSize: "1.5rem",
+                color: "#0d4d8d",
+                textDecoration: "none",
+                margin: "0 10px" // Add margin to create space between links
+              }}
             >
-          <Nav.Link
-            href="#contact"
-            style={{
-              fontFamily: "Georgia, serif",
-              fontWeight: 400,
-              fontSize: "1.5rem",
-              color: "#0d4d8d",
-              textDecoration: "none",
-              margin: "0 10px", // Add margin to create space between links
-            }}
-          >
-            Contact
-          </Nav.Link>
-          <Nav.Link
-            href="#menu"
-            style={{
-              fontFamily: "Georgia, serif",
-              fontWeight: 400,
-              fontSize: "1.5rem",
-              color: "#0d4d8d",
-              textDecoration: "none",
-              margin: "0 10px", // Add margin to create space between links
-            }}
-          >
-            Menu
-          </Nav.Link>
-          <Nav.Link
-            href="#events"
-            style={{
-              fontFamily: "Georgia, serif",
-              fontWeight: 400,
-              fontSize: "1.5rem",
-              color: "#0d4d8d",
-              textDecoration: "none",
-              margin: "0 10px", // Add margin to create space between links
-            }}
-          >
-            Events
-          </Nav.Link>
+              Contact
+            </Nav.Link>
+            <Nav.Link
+              href="#menu"
+              style={{
+                fontFamily: "Georgia, serif",
+                fontWeight: 400,
+                fontSize: "1.5rem",
+                color: "#0d4d8d",
+                textDecoration: "none",
+                margin: "0 10px" // Add margin to create space between links
+              }}
+            >
+              Menu
+            </Nav.Link>
+            <Nav.Link
+              href="#events"
+              style={{
+                fontFamily: "Georgia, serif",
+                fontWeight: 400,
+                fontSize: "1.5rem",
+                color: "#0d4d8d",
+                textDecoration: "none",
+                margin: "0 10px" // Add margin to create space between links
+              }}
+            >
+                Events
+              </Nav.Link>
             </Nav>
           </Container>
       </Navbar>
@@ -124,36 +129,42 @@ const Lomita = () => {
         <h5 className="contact-heading">Contact</h5>
         <Row>
           <Col md={4}>
-            <h2>Hours of Operation</h2>
-            <p> Opens 4PM Monday-Wednesday</p>
-            <p> Opens Noon Friday-Saturday </p>
-            <p> Opens 10AM on Sundays</p>
+          <h2 className="h2-custom">Hours of Operation</h2>
+            Opens 4PM Monday-Wednesday
+            <br />
+            Opens Noon Friday-Saturday
+            <br />
+            Opens 10AM Sundays
+            <br />
           </Col>
           <Col md={4}>
-            <h2>Address</h2>
-            <p>24503 Narbonne Ave, Lomita, CA 90717</p>
+          <h2 className="h2-custom">Address</h2>
+            24503 Narbonne Ave, Lomita, CA 90717
+            <br />
+         
+
             <a
               href="https://www.google.com/maps/dir//24503+Narbonne+Ave.+Lomita,+CA+90717"
               rel="noreferrer"
             >
               Get Directions
+              
             </a>
           </Col>
           <Col md={4}>
-            <h2>Contact Information</h2>
-            <p>
-              Phone: <a href="tel:+14243766947">(424) 376-6947</a>
-            </p>
-            <p>
+          <h2 className="h2-custom">Contact Information</h2>
+            Phone: <a href="tel:+14243766947">(424) 376-6947</a>
+            <br />
+            
               Email:{" "}
               <a href="mailto:info@theslipbar.com">info@theslipbar.com</a>
-            </p>
+          
           </Col>
         </Row>
 
         <Col md={12}>
-          <h2>Parking</h2>
-          <p>Parking is available in the lot across the bar.</p>
+        <h2 className="h2-custom">Parking</h2>
+          Parking is available in the lot across the bar
           {lomitaMap && (
             <img
               src={lomitaMap}

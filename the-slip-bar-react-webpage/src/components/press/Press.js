@@ -1,5 +1,5 @@
 import React from 'react';
-import './Press.css'; // Import the CSS file
+import '../../styles/Press.css';
 
 const Press = () => {
   return (

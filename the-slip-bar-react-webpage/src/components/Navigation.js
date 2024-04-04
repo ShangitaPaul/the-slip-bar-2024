@@ -41,8 +41,8 @@ function Navigation() {
               <NavDropdown.Item as={Link} to="/redondo-beach#events">Redondo Beach Events</NavDropdown.Item>
               <NavDropdown.Item as={Link} to="/lomita#events">Lomita Events</NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link as={Link} to="/merch">Merch</Nav.Link>
-            <Nav.Link as={Link} to="/jobs">Jobs</Nav.Link>
+            {/* <Nav.Link as={Link} to="/merch">Merch</Nav.Link> */}
+            {/* <Nav.Link as={Link} to="/jobs">Jobs</Nav.Link> */}
             <Nav.Link as={Link} to="/press">Press</Nav.Link>
             <Nav.Link as={Link} to="/contact">Contact</Nav.Link>
           </Nav>

@@ -1,4 +1,4 @@
-/* JobsPage.css */
+
 @import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 .jobs-page {
@@ -10,8 +10,9 @@
   
   .page-title {
     font-family: "Lobster Two", cursive;
+    font-style: italic;
     font-size: 3rem;
-    margin-top: 30px;
+    margin-top: 20px;
     margin-bottom: 50px;
   }
   

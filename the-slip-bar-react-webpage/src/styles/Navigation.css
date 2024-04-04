@@ -1,22 +1,28 @@
 .navbar {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0;
-  margin-bottom: 1%;
-  padding: 0;
-  font-family: "Urbanist", sans-serif;
+  justify-content: center; /* Center the navbar horizontally */
+  align-items: center; /* Center the navbar vertically */
+  font-family: "Trebuchet MS", sans-serif;
   font-weight: 400;
   font-size: 1.4rem;
   color: #fff;
   padding: 0;
 }
+
 .navbar-brand img {
-  display: block;
   width: 300px; /* Adjust width as needed */
   height: auto;
-  margin: 0;
+}
 
+.navbar-nav {
+  flex-grow: 1; /* Allow navbar links to occupy remaining space */
+  display: flex;
+  justify-content: center; /* Center the navbar links horizontally */
+  margin-top: 30px; /* Adjust top margin */
+}
+
+.navbar-nav .nav-link {
+  margin: 0 10px; /* Adjust margin between navbar links */
 }
 
 .instagram-icon {
@@ -28,18 +34,16 @@
   margin-bottom: 0;
 }
 
-
-
 .NavDropdown.Item {
   font-family: "poiret one", sans-serif;
   font-size: 2rem;
   font-weight: 700;
   align-items: center;
-    display: flex;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
-    list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .NavDropdown.Item a {
@@ -47,18 +51,16 @@
   font-weight: 700;
   font-size: 1.2rem;
   align-items: center;
-    display: flex;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
-    list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
   color: #fff;
   text-decoration: none;
   padding: 10px 15px;
   display: block;
 }
-
-
 
 /* Navigation.css */
 .custom-dropdown .dropdown-menu {
@@ -80,10 +82,8 @@
   }
 
   .navbar-brand img {
-    display: block;
     width: 250px; /* Adjust width as needed */
     height: auto;
-    margin: 0;
   }
 
   .instagram-icon {
@@ -93,5 +93,4 @@
     margin: 0;
     color: transparent;
   }
-  
 }

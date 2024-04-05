@@ -1,17 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Galada&family=Marck+Script&family=Ms+Madi&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
 .navbar {
   display: flex;
   justify-content: center; /* Center the navbar horizontally */
   align-items: center; /* Center the navbar vertically */
-  font-family: "Trebuchet MS", sans-serif;
-  font-weight: 400;
+  font-family: "Urbanist", sans-serif;
+  font-weight: 200;
   font-size: 1.4rem;
   color: #fff;
   padding: 0;
+  font-family: Optima, sans-serif;
+}
+
+.locations-dropdown {
+  font-family: "Urbanist", sans-serif;
+  font-style: uppercase;
+  font-weight: 700;
+  font-size: 1.2rem;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .navbar-brand img {
   width: 300px; /* Adjust width as needed */
   height: auto;
+  margin-left: 5px; /* Adjust margin as needed */
 }
 
 .navbar-nav {
@@ -35,7 +51,7 @@
 }
 
 .NavDropdown.Item {
-  font-family: "poiret one", sans-serif;
+  font-family: "Urbanist", sans-serif;
   font-size: 2rem;
   font-weight: 700;
   align-items: center;
@@ -47,7 +63,7 @@
 }
 
 .NavDropdown.Item a {
-  font-family: "poiret one", sans-serif;
+  font-family: "Urbanist", sans-serif;
   font-weight: 700;
   font-size: 1.2rem;
   align-items: center;
@@ -87,10 +103,8 @@
   }
 
   .instagram-icon {
-    display: block;
-    width: auto;
+    display: contents;
     height: auto;
-    margin: 0;
-    color: transparent;
+    margin-right: 10px; /* Adjust margin as needed */
   }
 }

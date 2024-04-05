@@ -1,13 +1,15 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 
 /* Apply custom styles to Contact component */
 #af-height-90 {
-    height: 90%;
+    width: 100%;
+    height: auto;
   }
   
   .af-max-width {
-    max-width: 960px; /* You can adjust this value as needed */
+    max-width: 1000px; /* You can adjust this value as needed */
   }
   
   .position-relative {
@@ -31,7 +33,7 @@
     font-weight: 500;
     font-style: normal;
     margin-bottom: 10px;
-    margin-top: `20px`;
+    margin-top: 20px`;
     font-size: 1.5rem;
 
   }

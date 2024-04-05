@@ -9,13 +9,12 @@ body {
 
 
 p {
-  font-family: "Urbanist", sans-serif;
   font-weight: 300;
   font-size: 1rem;
   margin: 5px 0;
 }
 .logo {
-  width: 30%;
+  width: 20%;
   height: auto;
   margin-top: 0;
 }

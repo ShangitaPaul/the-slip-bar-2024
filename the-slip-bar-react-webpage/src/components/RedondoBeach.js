@@ -27,7 +27,9 @@ const RedondoBeach = () => {
 
   return (
     <div className="Redondo Beach">
-      <h4 style={{ marginBottom: "-30px", marginTop: "20px" }}>Redondo Beach</h4>
+      <h4 style={{ marginBottom: "-30px", marginTop: "20px" }}>
+        Redondo Beach
+      </h4>
 
       <Navbar
         expand="lg"
@@ -38,7 +40,7 @@ const RedondoBeach = () => {
           marginTop: "0",
           paddingBottom: "0",
           backgroundColor: "transparent",
-          boxShadow: "none"
+          boxShadow: "none",
         }}
       >
         <Container>
@@ -51,53 +53,51 @@ const RedondoBeach = () => {
               alignItems: "center",
               width: "100%",
               margin: "0 auto",
-              marginBottom: 0
+              marginBottom: 0,
             }}
           >
             <Nav.Link
               href="#contact"
               style={{
-                fontFamily: "Georgia, serif",
+                fontFamily: "Urbanist, sans-serif",
                 fontWeight: 400,
-                fontSize: "1.5rem",
+                fontSize: "1rem",
                 color: "#0d4d8d",
                 textDecoration: "none",
-                margin: "0 10px" // Add margin to create space between links
+                margin: "0 5px", // Add margin to create space between links
               }}
             >
-              Contact
+              CONTACT
             </Nav.Link>
             <Nav.Link
               href="#menu"
               style={{
-                fontFamily: "Georgia, serif",
+                fontFamily: "Urbanist, sans-serif",
                 fontWeight: 400,
-                fontSize: "1.5rem",
+                fontSize: "1.1rem",
                 color: "#0d4d8d",
                 textDecoration: "none",
-                margin: "0 10px" // Add margin to create space between links
+                margin: "0 5px", // Add margin to create space between links
               }}
             >
-              Menu
+              MENU
             </Nav.Link>
             <Nav.Link
               href="#events"
               style={{
-                fontFamily: "Georgia, serif",
+                fontFamily: "Urbanist, sans-serif",
                 fontWeight: 400,
-                fontSize: "1.5rem",
+                fontSize: "1.1rem",
                 color: "#0d4d8d",
                 textDecoration: "none",
-                margin: "0 10px" // Add margin to create space between links
+                margin: "0 5px", // Add margin to create space between links
               }}
             >
-                Events
-              </Nav.Link>
-            </Nav>
-          </Container>
+              EVENTS
+            </Nav.Link>
+          </Nav>
+        </Container>
       </Navbar>
-      
-      {/* <div style={{ borderBottom: "2px solid #0d4d8d", marginTop: "0", marginBottom: "20px", padding: "0" }}></div> */}
 
 
       <div className="af-height-90 af-max-width mx-auto mt-2 position-relative">
@@ -128,46 +128,41 @@ const RedondoBeach = () => {
         <h5 className="contact-heading">Contact</h5>
         <Row>
           <Col md={4}>
-          <h2 className="h2-custom">Hours of Operation</h2>
+            <h2 className="h2-custom">Hours of Operation</h2>
             Opens Noon Monday-Saturday
             <br />
             Opens 10AM Sunday
             <br />
           </Col>
           <Col md={4}>
-          <h2 className="h2-custom">Address</h2>
+            <h2 className="h2-custom">Address</h2>
             120 N International Boardwalk, Redondo Beach, CA 90277
             <br />
-         
-
             <a
               href="https://www.google.com/maps/dir//24503+Narbonne+Ave.+Lomita,+CA+90717"
               rel="noreferrer"
             >
               Get Directions
-              
             </a>
           </Col>
           <Col md={4}>
-          <h2 className="h2-custom">Contact Information</h2>
+            <h2 className="h2-custom">Contact Information</h2>
             Phone: <a href="tel:+14243766947">(310) 921-8940</a>
             <br />
-            
-              Email:{" "}
-              <a href="mailto:info@theslipbar.com">info@theslipbar.com</a>
-          
+            Email: <a href="mailto:info@theslipbar.com">info@theslipbar.com</a>
           </Col>
         </Row>
 
         <Col md={12}>
-        <h2 className="h2-custom">Parking</h2>
-        Parking is available in the Redondo Beach Marina parking lot. First 2 hours are free.
-        {redondoMap && (
+          <h2 className="h2-custom">Parking</h2>
+          Parking is available in the Redondo Beach Marina parking lot. First 2
+          hours are free.
+          {redondoMap && (
             <img
               src={redondoMap}
               alt="Redondo Beach Parking Map"
               className="img-fluid"
-              style={{ maxWidth: "100%", border: "1px #0d4d8d solid"}}
+              style={{ maxWidth: "100%", border: "1px #0d4d8d solid" }}
               onError={(e) => console.error("Error loading map image:", e)}
             />
           )}

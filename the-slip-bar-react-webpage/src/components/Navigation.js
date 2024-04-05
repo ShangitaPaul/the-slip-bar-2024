@@ -31,20 +31,20 @@ function Navigation() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={handleToggle} />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link as={Link} to="/">Home</Nav.Link>
-            <Nav.Link as={Link} to="/about">About</Nav.Link>
-            <NavDropdown title="Locations" id="locations-dropdown" className="custom-dropdown justify-content-center">
-              <NavDropdown.Item as={Link} to="/redondo-beach">Redondo Beach</NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/lomita">Lomita</NavDropdown.Item>
+            <Nav.Link as={Link} to="/">HOME</Nav.Link>
+            <Nav.Link as={Link} to="/about">ABOUT</Nav.Link>
+            <NavDropdown title="LOCATIONS" id="locations-dropdown" className="custom-dropdown justify-content-center">
+              <NavDropdown.Item as={Link} to="/redondo-beach">REDONDO BEACH</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/lomita">LOMITA</NavDropdown.Item>
             </NavDropdown>
-            <NavDropdown title="Events" id="events-dropdown" className="custom-dropdown justify-content-center">
-              <NavDropdown.Item as={Link} to="/redondo-beach#events">Redondo Beach Events</NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/lomita#events">Lomita Events</NavDropdown.Item>
+            <NavDropdown title="EVENTS" id="events-dropdown" className="custom-dropdown justify-content-center">
+              <NavDropdown.Item as={Link} to="/redondo-beach#events">REDONDO BEACH EVENTS</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/lomita#events">LOMITA EVENTS</NavDropdown.Item>
             </NavDropdown>
             {/* <Nav.Link as={Link} to="/merch">Merch</Nav.Link> */}
             {/* <Nav.Link as={Link} to="/jobs">Jobs</Nav.Link> */}
-            <Nav.Link as={Link} to="/press">Press</Nav.Link>
-            <Nav.Link as={Link} to="/contact">Contact</Nav.Link>
+            <Nav.Link as={Link} to="/PRESS">PRESS</Nav.Link>
+            <Nav.Link as={Link} to="/contact">CONTACT</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

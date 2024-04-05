@@ -28,7 +28,7 @@ const Lomita = () => {
 
   return (
     <div className="Lomita">
-      <h4 style={{ marginBottom: "-20px", marginTop: "20px" }}>Lomita</h4>
+      <h4 style={{ fontFamily: "Galada", marginBottom: "-20px", marginTop: "20px" }}>Lomita</h4>
 
       <Navbar
         expand="lg"
@@ -58,41 +58,41 @@ const Lomita = () => {
             <Nav.Link
               href="#contact"
               style={{
-                fontFamily: "Georgia, serif",
+                fontFamily: "Urbanist, sans-serif",
                 fontWeight: 400,
-                fontSize: "1.5rem",
+                fontSize: "1rem",
                 color: "#0d4d8d",
                 textDecoration: "none",
-                margin: "0 10px" // Add margin to create space between links
+                margin: "0 5px" // Add margin to create space between links
               }}
             >
-              Contact
+              CONTACT
             </Nav.Link>
             <Nav.Link
               href="#menu"
               style={{
-                fontFamily: "Georgia, serif",
+                fontFamily: "Urbanist, sans-serif",
                 fontWeight: 400,
-                fontSize: "1.5rem",
+                fontSize: "1.1rem",
                 color: "#0d4d8d",
                 textDecoration: "none",
-                margin: "0 10px" // Add margin to create space between links
+                margin: "0 5px" // Add margin to create space between links
               }}
             >
-              Menu
+              MENU
             </Nav.Link>
             <Nav.Link
               href="#events"
               style={{
-                fontFamily: "Georgia, serif",
+                fontFamily: "Urbanist, sans-serif",
                 fontWeight: 400,
-                fontSize: "1.5rem",
+                fontSize: "1.1rem",
                 color: "#0d4d8d",
                 textDecoration: "none",
-                margin: "0 10px" // Add margin to create space between links
+                margin: "0 5px" // Add margin to create space between links
               }}
             >
-                Events
+                EVENTS
               </Nav.Link>
             </Nav>
           </Container>

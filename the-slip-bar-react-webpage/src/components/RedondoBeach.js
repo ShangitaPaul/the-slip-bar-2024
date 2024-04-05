@@ -5,6 +5,8 @@ import redondoBeachCarouselImages from "../data/redondoBeachCarouselImages";
 import redondoBeachMenu1 from "../menus/redondomenupage2.jpg";
 import redondoBeachMenu2 from "../menus/redondomenupage1.jpg";
 import redondoMap from "../maps/redondoparking.png";
+import redondoevents1 from "../calendar/april-events-1.jpg";
+import redondoevents2 from "../calendar/april-events-2.jpg";
 import Navbar from "react-bootstrap/Navbar";
 import ScrollToTopButton from "./ScrollToTopButton";
 import "../styles/RedondoBeach.css";
@@ -197,16 +199,33 @@ const RedondoBeach = () => {
           </Col>
         </Row>
       </Container>
-
       <Container id="events">
         <h5>Events</h5>
-
-        <div
-          data-tockify-component="calendar"
-          data-tockify-calendar="theslipbar"
-        ></div>
+        <Row>
+          <Col md={6}>
+            {redondoevents1 && (
+              <img
+                src={redondoevents1}
+                alt="Events Page 1"
+                className="img-fluid"
+                style={{ maxWidth: "100%" }}
+                onError={(e) => console.error("Error loading events page 1:", e)}
+              />
+            )}
+          </Col>
+          <Col md={6}>
+            {redondoevents1 && (
+              <img
+                src={redondoevents2}
+                alt="Events Page 2"
+                className="img-fluid"
+                style={{ maxWidth: "100%" }}
+                onError={(e) => console.error("Error loading events page 2:", e)}
+              />
+            )}
+          </Col>
+        </Row>
       </Container>
-
       {/* Scroll to top button */}
       <ScrollToTopButton />
     </div>
@@ -214,3 +233,4 @@ const RedondoBeach = () => {
 };
 
 export default RedondoBeach;
+

@@ -1,15 +1,17 @@
+/* Add imported fonts */
 @import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Galada&family=Marck+Script&family=Ms+Madi&display=swap');
 
+/* Set body styles */
 body {
   text-align: center;
-  background-color: #ffffff; /* Set background color to white */
+  background-color: #ffffff;
   font-size: 1.2rem;
   font-family: "Georgia", serif;
   font-weight: 100;
 }
 
+/* Navbar styles */
 .me-auto-navbar-nav {
   margin-top: 0;
   display: flex;
@@ -17,23 +19,21 @@ body {
   justify-content: space-between;
   background-color: none;
 }
+
 /* Hide carousel arrow controls */
 .carousel-control-prev,
 .carousel-control-next {
-    display: none;
+  display: none;
 }
 
-.Navbar {
-  background-color: none;
-  margin-top: 0;
-}
-
+/* Contact section heading */
 .contact-heading {
-  margin-top: 30px;
+  margin-top: 20px; /* Reduce margin */
 }
 
+/* Paragraph styles */
 p {
-  font-family: "Montserrat", sans-serif; /* Set font-family for p */
+  font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
   font-weight: 300;
@@ -41,21 +41,19 @@ p {
   margin: 5px 0;
 }
 
+/* Header styles */
 h1, h3, h6 {
-  font-family: "Montserrat", sans-serif; /* Set font-family for h1, h2, h3, h6 */
+  font-family: "Montserrat", sans-serif;
 }
 
 h1 {
   font-weight: 400;
   font-style: normal;
   font-size: 2rem;
-  color: black; /* Set text color to black */
+  color: black;
 }
 
-/* styles.module.css */
-
-/* styles.css */
-
+/* Custom h2 styles */
 .h2-custom {
   font-family: "Lobster Two", cursive;
   font-size: 1.8rem;
@@ -65,37 +63,37 @@ h1 {
   color: black;
 }
 
-
-
+/* Other header styles */
 h3, h6 {
   font-weight: 400;
   font-style: normal;
   font-size: 2rem;
   margin-top: 20px;
-  color: black; /* Set text color to black */
+  color: black;
 }
 
 h4 {
-  font-family: "Galada", cursive; /* Set font-family for h4 */
+  font-family: "Galada", cursive;
   margin-top: 20px;
   margin-bottom: 0;
   font-weight: 700;
   font-style: normal;
   font-size: 3.5rem;
-  color: black; /* Set text color to black */
+  color: black;
 }
 
+/* Adjusted h5 styles */
 h5 {
-  font-family: "Lobster Two", cursive; /* Set font-family for h5 */
+  font-family: "Lobster Two", cursive;
   font-weight: 400;
   font-style: italic;
   font-size: 2.2rem;
-  margin: 20px 0; /* Increased margin for more space */
-  margin-top: 100px;
+  margin: 10px 0; /* Adjusted margin */
   position: relative;
-  color: black; /* Set text color to black */
+  color: black;
 }
 
+/* Before and after pseudo-elements for h5 */
 h5::before,
 h5::after {
   display: flex;
@@ -103,8 +101,8 @@ h5::after {
   content: "";
   position: absolute;
   top: 50%;
-  width: 30%; /* Adjust line length */
-  height: 1px; /* Adjust line thickness */
+  width: 30%;
+  height: 1px;
   background-color: #0d4d8d;
 }
 
@@ -116,6 +114,7 @@ h5::after {
   right: 0;
 }
 
+/* Menu styles */
 .menu {
   width: 100%;
   height: auto;
